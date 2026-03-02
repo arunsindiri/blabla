@@ -13,7 +13,7 @@
     },
     "time": {
       "created": 1772446466759,
-      "updated": 1772446539503
+      "updated": 1772446553680
     }
   },
   "messages": [
@@ -492,7 +492,8 @@
       "info": {
         "role": "assistant",
         "time": {
-          "created": 1772446539454
+          "created": 1772446539454,
+          "completed": 1772446553637
         },
         "parentID": "REDACTED",
         "modelID": "big-pickle",
@@ -505,14 +506,16 @@
         },
         "cost": 0,
         "tokens": {
-          "input": 0,
-          "output": 0,
+          "total": 11728,
+          "input": 78,
+          "output": 80,
           "reasoning": 0,
           "cache": {
-            "read": 0,
-            "write": 0
+            "read": 11494,
+            "write": 76
           }
         },
+        "finish": "tool-calls",
         "id": "msg_cae0bdebd0014fQA4Fj000u0o6",
         "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl"
       },
@@ -545,22 +548,133 @@
           "callID": "call_function_7p37p48xg5yv_1",
           "tool": "bash",
           "state": {
-            "status": "running",
+            "status": "completed",
             "input": {
               "command": "git add arun.txt && git commit -m \"testing entire with arun.txt\"",
               "description": "Stage and commit arun.txt"
             },
+            "output": "[main 01560b4] testing entire with arun.txt\n 1 file changed, 1 insertion(+)\n",
+            "title": "Stage and commit arun.txt",
             "metadata": {
-              "output": "",
-              "description": "Stage and commit arun.txt"
+              "output": "[main 01560b4] testing entire with arun.txt\n 1 file changed, 1 insertion(+)\n",
+              "exit": 0,
+              "description": "Stage and commit arun.txt",
+              "truncated": false
             },
             "time": {
-              "start": 1772446550850
+              "start": 1772446550778,
+              "end": 1772446553604
             }
           },
           "id": "prt_cae0bf453001qR1K5hUQ5mRDv6",
           "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl",
           "messageID": "msg_cae0bdebd0014fQA4Fj000u0o6"
+        },
+        {
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "725c2dec892d989956394c4c626faa5391d341b6",
+          "cost": 0,
+          "tokens": {
+            "total": 11728,
+            "input": 78,
+            "output": 80,
+            "reasoning": 0,
+            "cache": {
+              "read": 11494,
+              "write": 76
+            }
+          },
+          "id": "prt_cae0c1606001ayxs7ZnBwqBxY2",
+          "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl",
+          "messageID": "msg_cae0bdebd0014fQA4Fj000u0o6"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1772446553641,
+          "completed": 1772446556906
+        },
+        "parentID": "REDACTED",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/home/arun/registation_website",
+          "root": "/home/arun/registation_website"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 11804,
+          "input": 112,
+          "output": 37,
+          "reasoning": 0,
+          "cache": {
+            "read": 11630,
+            "write": 25
+          }
+        },
+        "finish": "stop",
+        "id": "msg_cae0c1629001Fvs1Ai0wCt7R6L",
+        "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "snapshot": "725c2dec892d989956394c4c626faa5391d341b6",
+          "id": "prt_cae0c201b001Gq94UFm7UIb4po",
+          "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl",
+          "messageID": "msg_cae0c1629001Fvs1Ai0wCt7R6L"
+        },
+        {
+          "type": "reasoning",
+          "text": "Done. The file has been added and committed with the message \"testing entire with arun.txt\".",
+          "metadata": {
+            "anthropic": {
+              "signature": "e299eaeff3b3e155af33c7d3598f7197411a202faa9f121a898f8868a09d79a0"
+            }
+          },
+          "time": {
+            "start": 1772446556188,
+            "end": 1772446556804
+          },
+          "id": "prt_cae0c201c001j5IKvSosCUoKYl",
+          "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl",
+          "messageID": "msg_cae0c1629001Fvs1Ai0wCt7R6L"
+        },
+        {
+          "type": "text",
+          "text": "Done. Committed as \"testing entire with arun.txt\".",
+          "time": {
+            "start": 1772446556834,
+            "end": 1772446556834
+          },
+          "id": "prt_cae0c2285001y5QZ2j4An2WILU",
+          "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl",
+          "messageID": "msg_cae0c1629001Fvs1Ai0wCt7R6L"
+        },
+        {
+          "type": "step-finish",
+          "reason": "stop",
+          "snapshot": "725c2dec892d989956394c4c626faa5391d341b6",
+          "cost": 0,
+          "tokens": {
+            "total": 11804,
+            "input": 112,
+            "output": 37,
+            "reasoning": 0,
+            "cache": {
+              "read": 11630,
+              "write": 25
+            }
+          },
+          "id": "prt_cae0c22cc001blvumONK7CKEjv",
+          "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl",
+          "messageID": "msg_cae0c1629001Fvs1Ai0wCt7R6L"
         }
       ]
     }
