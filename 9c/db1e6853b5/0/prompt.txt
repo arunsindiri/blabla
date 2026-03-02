@@ -1,0 +1,5 @@
+edit arun.txt and add new line as "adding new line"
+
+---
+
+now git add arun.txt and commit message as "testing entire with arun.txt"

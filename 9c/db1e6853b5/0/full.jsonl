@@ -1,0 +1,568 @@
+{
+  "info": {
+    "id": "ses_351f53d39ffe70PAcEOfg64Udl",
+    "slug": "silent-engine",
+    "projectID": "1b2de74939bf9362126f7c4a0c4580afec732d5a",
+    "directory": "/home/arun/registation_website",
+    "title": "Arun.txt edit: add new line \"adding new line\"",
+    "version": "1.2.15",
+    "summary": {
+      "additions": 1,
+      "deletions": 0,
+      "files": 1
+    },
+    "time": {
+      "created": 1772446466759,
+      "updated": 1772446539503
+    }
+  },
+  "messages": [
+    {
+      "info": {
+        "role": "user",
+        "time": {
+          "created": 1772446466785
+        },
+        "summary": {
+          "diffs": [
+            {
+              "file": "arun.txt",
+              "before": "hi iam arun how are you\n",
+              "after": "hi iam arun how are you\nadding new line\n",
+              "additions": 1,
+              "deletions": 0,
+              "status": "modified"
+            }
+          ]
+        },
+        "agent": "build",
+        "model": {
+          "providerID": "opencode",
+          "modelID": "big-pickle"
+        },
+        "id": "msg_cae0ac2cf001ulcDajddg0nils",
+        "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl"
+      },
+      "parts": [
+        {
+          "type": "text",
+          "text": "edit arun.txt and add new line as \"adding new line\"",
+          "id": "prt_cae0ac2cf002R4PHfI2NT3Ucd6",
+          "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl",
+          "messageID": "msg_cae0ac2cf001ulcDajddg0nils"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1772446466814,
+          "completed": 1772446473276
+        },
+        "parentID": "msg_cae0ac2cf001ulcDajddg0nils",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/home/arun/registation_website",
+          "root": "/home/arun/registation_website"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 11427,
+          "input": 78,
+          "output": 64,
+          "reasoning": 0,
+          "cache": {
+            "read": 510,
+            "write": 10775
+          }
+        },
+        "finish": "tool-calls",
+        "id": "msg_cae0ac2fe001wLVr5Y8ywqczLu",
+        "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "snapshot": "27e835f40ce5aa00fb1878b43034b17400a50a99",
+          "id": "prt_cae0ad886001WFWsvVpeBaUAdO",
+          "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl",
+          "messageID": "msg_cae0ac2fe001wLVr5Y8ywqczLu"
+        },
+        {
+          "type": "reasoning",
+          "text": "The user wants me to edit a file called \"arun.txt\" and add a new line with the text \"adding new line\". Let me first check if this file exists.",
+          "metadata": {
+            "anthropic": {
+              "signature": "ea7cbbd4799c98d41527315d3221cffd7d932c85037bef13f7b6a9d64006c1ac"
+            }
+          },
+          "time": {
+            "start": 1772446472328,
+            "end": 1772446473192
+          },
+          "id": "prt_cae0ad888001TRpxaX1J8UR4bQ",
+          "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl",
+          "messageID": "msg_cae0ac2fe001wLVr5Y8ywqczLu"
+        },
+        {
+          "type": "tool",
+          "callID": "call_function_c91of073707x_1",
+          "tool": "glob",
+          "state": {
+            "status": "completed",
+            "input": {
+              "pattern": "arun.txt"
+            },
+            "output": "/home/arun/registation_website/arun.txt",
+            "title": "",
+            "metadata": {
+              "count": 1,
+              "truncated": false
+            },
+            "time": {
+              "start": 1772446473210,
+              "end": 1772446473226
+            }
+          },
+          "id": "prt_cae0adbec001Lo2fkVe5Hmzvw8",
+          "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl",
+          "messageID": "msg_cae0ac2fe001wLVr5Y8ywqczLu"
+        },
+        {
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "27e835f40ce5aa00fb1878b43034b17400a50a99",
+          "cost": 0,
+          "tokens": {
+            "total": 11427,
+            "input": 78,
+            "output": 64,
+            "reasoning": 0,
+            "cache": {
+              "read": 510,
+              "write": 10775
+            }
+          },
+          "id": "prt_cae0adc10001ZFlQDGSQXnfBXl",
+          "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl",
+          "messageID": "msg_cae0ac2fe001wLVr5Y8ywqczLu"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1772446473279,
+          "completed": 1772446476672
+        },
+        "parentID": "msg_cae0ac2cf001ulcDajddg0nils",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/home/arun/registation_website",
+          "root": "/home/arun/registation_website"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 11508,
+          "input": 100,
+          "output": 54,
+          "reasoning": 0,
+          "cache": {
+            "read": 11266,
+            "write": 88
+          }
+        },
+        "finish": "tool-calls",
+        "id": "msg_cae0adc3f001A7KgfCA6qLnFZp",
+        "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "snapshot": "27e835f40ce5aa00fb1878b43034b17400a50a99",
+          "id": "prt_cae0ae555001F4FrJ1Qh57K8HU",
+          "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl",
+          "messageID": "msg_cae0adc3f001A7KgfCA6qLnFZp"
+        },
+        {
+          "type": "reasoning",
+          "text": "The file exists. Let me read it first, then add the new line.",
+          "metadata": {
+            "anthropic": {
+              "signature": "73484c7d253bb71f27b4ee25f11e0c91b5797701fcafaccfd6971b22cd9bfc17"
+            }
+          },
+          "time": {
+            "start": 1772446475608,
+            "end": 1772446476395
+          },
+          "id": "prt_cae0ae558001BRu7Lnd0MnWloS",
+          "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl",
+          "messageID": "msg_cae0adc3f001A7KgfCA6qLnFZp"
+        },
+        {
+          "type": "tool",
+          "callID": "call_function_5kfdjhci2yan_1",
+          "tool": "read",
+          "state": {
+            "status": "completed",
+            "input": {
+              "filePath": "/home/arun/registation_website/arun.txt"
+            },
+            "output": "<path>/home/arun/registation_website/arun.txt</path>\n<type>file</type>\n<content>1: hi iam arun how are you\n\n(End of file - total 1 lines)\n</content>",
+            "title": "arun.txt",
+            "metadata": {
+              "preview": "hi iam arun how are you",
+              "truncated": false,
+              "loaded": []
+            },
+            "time": {
+              "start": 1772446476574,
+              "end": 1772446476592
+            }
+          },
+          "id": "prt_cae0ae86d001KLYa6nZnr4wqx6",
+          "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl",
+          "messageID": "msg_cae0adc3f001A7KgfCA6qLnFZp"
+        },
+        {
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "27e835f40ce5aa00fb1878b43034b17400a50a99",
+          "cost": 0,
+          "tokens": {
+            "total": 11508,
+            "input": 100,
+            "output": 54,
+            "reasoning": 0,
+            "cache": {
+              "read": 11266,
+              "write": 88
+            }
+          },
+          "id": "prt_cae0ae96c001FPAsVHSyGfdalU",
+          "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl",
+          "messageID": "msg_cae0adc3f001A7KgfCA6qLnFZp"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1772446476675,
+          "completed": 1772446480509
+        },
+        "parentID": "msg_cae0ac2cf001ulcDajddg0nils",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/home/arun/registation_website",
+          "root": "/home/arun/registation_website"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 11689,
+          "input": 137,
+          "output": 117,
+          "reasoning": 0,
+          "cache": {
+            "read": 11285,
+            "write": 150
+          }
+        },
+        "finish": "tool-calls",
+        "id": "msg_cae0ae983001TlgXeq0wYAx2op",
+        "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "snapshot": "27e835f40ce5aa00fb1878b43034b17400a50a99",
+          "id": "prt_cae0af277001clWnR7D9AnPzbx",
+          "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl",
+          "messageID": "msg_cae0ae983001TlgXeq0wYAx2op"
+        },
+        {
+          "type": "reasoning",
+          "text": "The file has one line with \"hi iam arun how are you\". I need to add a new line \"adding new line\" to it. I'll use the edit tool to add the new line.",
+          "metadata": {
+            "anthropic": {
+              "signature": "46be3a7dd9c5b89a4cc4aef4b3d3702dc997701650d135a264232a6f1a53eda3"
+            }
+          },
+          "time": {
+            "start": 1772446478969,
+            "end": 1772446480244
+          },
+          "id": "REDACTED",
+          "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl",
+          "messageID": "msg_cae0ae983001TlgXeq0wYAx2op"
+        },
+        {
+          "type": "tool",
+          "callID": "call_function_ljzip4a13zbz_1",
+          "tool": "edit",
+          "state": {
+            "status": "completed",
+            "input": {
+              "filePath": "/home/arun/registation_website/arun.txt",
+              "newString": "hi iam arun how are you\nadding new line",
+              "oldString": "hi iam arun how are you"
+            },
+            "output": "Edit applied successfully.",
+            "title": "arun.txt",
+            "metadata": {
+              "diagnostics": {},
+              "diff": "Index: /home/arun/registation_website/arun.txt\n===================================================================\n--- /home/arun/registation_website/arun.txt\n+++ /home/arun/registation_website/arun.txt\n@@ -1,1 +1,2 @@\n hi iam arun how are you\n+adding new line\n",
+              "filediff": {
+                "file": "/home/arun/registation_website/arun.txt",
+                "before": "hi iam arun how are you\n",
+                "after": "hi iam arun how are you\nadding new line\n",
+                "additions": 1,
+                "deletions": 0
+              },
+              "truncated": false
+            },
+            "time": {
+              "start": 1772446480404,
+              "end": 1772446480429
+            }
+          },
+          "id": "prt_cae0af775001HuvRq4Dyu4D59S",
+          "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl",
+          "messageID": "msg_cae0ae983001TlgXeq0wYAx2op"
+        },
+        {
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "725c2dec892d989956394c4c626faa5391d341b6",
+          "cost": 0,
+          "tokens": {
+            "total": 11689,
+            "input": 137,
+            "output": 117,
+            "reasoning": 0,
+            "cache": {
+              "read": 11285,
+              "write": 150
+            }
+          },
+          "id": "prt_cae0af85d001vYyW0rEAlm4zvl",
+          "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl",
+          "messageID": "msg_cae0ae983001TlgXeq0wYAx2op"
+        },
+        {
+          "type": "patch",
+          "hash": "27e835f40ce5aa00fb1878b43034b17400a50a99",
+          "files": [
+            "/home/arun/registation_website/arun.txt"
+          ],
+          "id": "prt_cae0af878001noKE7uytov7ysl",
+          "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl",
+          "messageID": "msg_cae0ae983001TlgXeq0wYAx2op"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1772446480513,
+          "completed": 1772446484079
+        },
+        "parentID": "msg_cae0ac2cf001ulcDajddg0nils",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/home/arun/registation_website",
+          "root": "/home/arun/registation_website"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 11755,
+          "input": 92,
+          "output": 47,
+          "reasoning": 0,
+          "cache": {
+            "read": 11376,
+            "write": 240
+          }
+        },
+        "finish": "stop",
+        "id": "msg_cae0af881001UPQyJeAlClwaOW",
+        "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "snapshot": "725c2dec892d989956394c4c626faa5391d341b6",
+          "id": "prt_cae0b0480001QvV6eomqZqqEmU",
+          "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl",
+          "messageID": "msg_cae0af881001UPQyJeAlClwaOW"
+        },
+        {
+          "type": "reasoning",
+          "text": "The edit was applied successfully. The file now has two lines - the original line and the new \"adding new line\" line.",
+          "metadata": {
+            "anthropic": {
+              "signature": "0c25d2527e3d19e9961a3f9e2c35f9432a181a7fad852928f57b5c13bb4ebf80"
+            }
+          },
+          "time": {
+            "start": 1772446483585,
+            "end": 1772446484038
+          },
+          "id": "prt_cae0b0481001uGobD7NYHwTZwn",
+          "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl",
+          "messageID": "msg_cae0af881001UPQyJeAlClwaOW"
+        },
+        {
+          "type": "text",
+          "text": "Done. Added \"adding new line\" as a new line in arun.txt.",
+          "time": {
+            "start": 1772446484043,
+            "end": 1772446484043
+          },
+          "id": "prt_cae0b0648001pHkbw5U0zmMWNc",
+          "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl",
+          "messageID": "msg_cae0af881001UPQyJeAlClwaOW"
+        },
+        {
+          "type": "step-finish",
+          "reason": "stop",
+          "snapshot": "725c2dec892d989956394c4c626faa5391d341b6",
+          "cost": 0,
+          "tokens": {
+            "total": 11755,
+            "input": 92,
+            "output": 47,
+            "reasoning": 0,
+            "cache": {
+              "read": 11376,
+              "write": 240
+            }
+          },
+          "id": "prt_cae0b064d001i1Tt6Q2Igm8JIm",
+          "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl",
+          "messageID": "msg_cae0af881001UPQyJeAlClwaOW"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "user",
+        "time": {
+          "created": 1772446539441
+        },
+        "summary": {
+          "diffs": []
+        },
+        "agent": "build",
+        "model": {
+          "providerID": "opencode",
+          "modelID": "big-pickle"
+        },
+        "id": "REDACTED",
+        "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl"
+      },
+      "parts": [
+        {
+          "type": "text",
+          "text": "now git add arun.txt and commit message as \"testing entire with arun.txt\"",
+          "id": "prt_cae0bdea3002edEcIGpssfUVeR",
+          "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl",
+          "messageID": "REDACTED"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1772446539454
+        },
+        "parentID": "REDACTED",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/home/arun/registation_website",
+          "root": "/home/arun/registation_website"
+        },
+        "cost": 0,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "reasoning": 0,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        },
+        "id": "msg_cae0bdebd0014fQA4Fj000u0o6",
+        "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "snapshot": "725c2dec892d989956394c4c626faa5391d341b6",
+          "id": "prt_cae0bf299001quY7XqD23qQNht",
+          "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl",
+          "messageID": "msg_cae0bdebd0014fQA4Fj000u0o6"
+        },
+        {
+          "type": "reasoning",
+          "text": "The user wants me to git add arun.txt and commit with the message \"testing entire with arun.txt\"",
+          "metadata": {
+            "anthropic": {
+              "signature": "37b82855b74c3f31d38385eb6820a704bdbf6332f8418ab42bf7600cc60d3a4a"
+            }
+          },
+          "time": {
+            "start": 1772446544538,
+            "end": 1772446544977
+          },
+          "id": "prt_cae0bf29a0016vDbf1gvQLAApO",
+          "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl",
+          "messageID": "msg_cae0bdebd0014fQA4Fj000u0o6"
+        },
+        {
+          "type": "tool",
+          "callID": "call_function_7p37p48xg5yv_1",
+          "tool": "bash",
+          "state": {
+            "status": "running",
+            "input": {
+              "command": "git add arun.txt && git commit -m \"testing entire with arun.txt\"",
+              "description": "Stage and commit arun.txt"
+            },
+            "metadata": {
+              "output": "",
+              "description": "Stage and commit arun.txt"
+            },
+            "time": {
+              "start": 1772446550850
+            }
+          },
+          "id": "prt_cae0bf453001qR1K5hUQ5mRDv6",
+          "sessionID": "ses_351f53d39ffe70PAcEOfg64Udl",
+          "messageID": "msg_cae0bdebd0014fQA4Fj000u0o6"
+        }
+      ]
+    }
+  ]
+}

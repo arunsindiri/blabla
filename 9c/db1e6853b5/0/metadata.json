@@ -1,0 +1,30 @@
+{
+  "cli_version": "0.4.8",
+  "checkpoint_id": "9cdb1e6853b5",
+  "session_id": "ses_351f53d39ffe70PAcEOfg64Udl",
+  "strategy": "manual-commit",
+  "created_at": "2026-03-02T10:15:53.583232545Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "arun.txt"
+  ],
+  "agent": "OpenCode",
+  "turn_id": "1fa264089856",
+  "token_usage": {
+    "input_tokens": 407,
+    "cache_creation_tokens": 11253,
+    "cache_read_tokens": 34437,
+    "output_tokens": 282,
+    "api_call_count": 5
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-03-02T10:15:53.534993376Z",
+    "agent_lines": 0,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 1,
+    "total_committed": 1,
+    "agent_percentage": 0
+  }
+}
